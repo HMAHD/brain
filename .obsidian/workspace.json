@@ -142,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Learning - Degree/IoT Fundamentals A Comprehensive Study Guide.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of IoT Fundamentals A Comprehensive Study Guide"
             }
           },
           {
@@ -195,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5,
-    "collapsed": true
+    "width": 371.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,8 +209,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1df7de885f3a496d",
+  "active": "0c591b7d79870209",
   "lastOpenFiles": [
+    "README.md",
+    "LICENSE",
     "Learning - Degree/IOT.md",
     "Learning - Degree/IoT Fundamentals A Comprehensive Study Guide.md",
     "Prompt Engineering.md",
@@ -243,7 +245,6 @@
     "Work -job/MySQL Database on Ubuntu VPS.md",
     "Work -job/Template Readme.md.md",
     "Work -job/Updating React Frontend from GitHub and Rebuilding.md",
-    "notes/WEB SERVICES.md",
     "notes/Stats 3.pdf",
     "notes/Stats 2.pdf",
     "notes/Stats 1.pdf",
@@ -256,7 +257,6 @@
     "Learning/Go Lang/Diagnostics/Pasted image 20220616192116.png",
     "Learning/Go Lang/Diagnostics/Pasted image 20220315230521.png",
     "Learning/Go Lang/Writing Web Applications",
-    "Learning/Go Lang/Managing dependencies",
     "Screenshot 2025-05-11 133714.png",
     "Screenshot 2025-05-11 133621.png"
   ]
