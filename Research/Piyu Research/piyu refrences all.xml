@@ -1,0 +1,506 @@
+<b:Sources xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" SelectedStyle="">
+  <b:Source>
+    <b:Tag>UNICEF2021</b:Tag>
+    <b:SourceType>Report</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>UNICEF</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Sri Lanka Nutrition and Health Survey Report 2020-2021</b:Title>
+    <b:Year>2022</b:Year>
+    <b:City>Colombo</b:City>
+    <b:Publisher>UNICEF Sri Lanka</b:Publisher>
+    <b:RefOrder>1</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Jayatissa2021</b:Tag>
+    <b:SourceType>Report</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Jayatissa</b:Last>
+            <b:First>R.</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Gunathilaka</b:Last>
+            <b:First>M. M.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Childhood malnutrition in Sri Lanka: A road map for the last mile</b:Title>
+    <b:Year>2021</b:Year>
+    <b:Publisher>World Health Organization, Regional Office for South-East Asia</b:Publisher>
+    <b:RefOrder>2</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>WHO2022</b:Tag>
+    <b:SourceType>Report</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>World Health Organization</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Malnutrition in children: Key facts and developmental implications</b:Title>
+    <b:Year>2022</b:Year>
+    <b:City>Geneva</b:City>
+    <b:Publisher>WHO</b:Publisher>
+    <b:RefOrder>3</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Ministry2023</b:Tag>
+    <b:SourceType>Report</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Ministry of Health</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Sri Lanka Digital Health Blueprint</b:Title>
+    <b:Year>2023</b:Year>
+    <b:City>Colombo</b:City>
+    <b:Publisher>Ministry of Health, Sri Lanka</b:Publisher>
+    <b:RefOrder>4</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Perera2021</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Perera</b:Last>
+            <b:First>S.</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Weerasinghe</b:Last>
+            <b:First>K.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Barriers to healthcare access in rural Sri Lanka: Challenges for midwifery services in agricultural communities</b:Title>
+    <b:JournalName>International Journal of Nursing Studies</b:JournalName>
+    <b:Year>2021</b:Year>
+    <b:Volume>105</b:Volume>
+    <b:Pages>103562</b:Pages>
+    <b:RefOrder>5</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>DeSilva2021</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>De Silva</b:Last>
+            <b:First>A.</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Fernando</b:Last>
+            <b:First>R.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Digital health interventions for maternal and child health care in resource-constrained settings: A systematic review</b:Title>
+    <b:JournalName>Journal of Medical Internet Research</b:JournalName>
+    <b:Year>2021</b:Year>
+    <b:Volume>23</b:Volume>
+    <b:Issue>3</b:Issue>
+    <b:Pages>e25183</b:Pages>
+    <b:RefOrder>6</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Karunapala2021</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Karunapala</b:Last>
+            <b:First>A.</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Samarasinghe</b:Last>
+            <b:First>B.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Socioeconomic disparities in child nutrition: A case study of Dambulla agricultural community</b:Title>
+    <b:JournalName>Ceylon Medical Journal</b:JournalName>
+    <b:Year>2021</b:Year>
+    <b:Volume>66</b:Volume>
+    <b:Issue>2</b:Issue>
+    <b:Pages>102-110</b:Pages>
+    <b:RefOrder>7</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Athukorala2021</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Athukorala</b:Last>
+            <b:First>P.</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Jayasinghe</b:Last>
+            <b:First>D.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Communication challenges in rural healthcare delivery: A qualitative study from Central Province, Sri Lanka</b:Title>
+    <b:JournalName>Rural and Remote Health</b:JournalName>
+    <b:Year>2021</b:Year>
+    <b:Volume>21</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:Pages>6158</b:Pages>
+    <b:RefOrder>8</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Rathnayake2022</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Rathnayake</b:Last>
+            <b:First>T.</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Malwenna</b:Last>
+            <b:First>D.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Digital health solutions for rural communities: Challenges and opportunities in the Sri Lankan context</b:Title>
+    <b:JournalName>Digital Health</b:JournalName>
+    <b:Year>2022</b:Year>
+    <b:Volume>8</b:Volume>
+    <b:Pages>1-12</b:Pages>
+    <b:RefOrder>9</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Wickramasinghe2021</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Wickramasinghe</b:Last>
+            <b:First>H.</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Pathirana</b:Last>
+            <b:First>S.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Digital health applications for maternal and child healthcare in low and middle-income countries: A scoping review</b:Title>
+    <b:JournalName>BMJ Global Health</b:JournalName>
+    <b:Year>2021</b:Year>
+    <b:Volume>6</b:Volume>
+    <b:Issue>9</b:Issue>
+    <b:Pages>e005756</b:Pages>
+    <b:RefOrder>10</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>GNR2020</b:Tag>
+    <b:SourceType>ElectronicSource</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Global Nutrition Report</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Country Nutrition Profiles - Sri Lanka</b:Title>
+    <b:Year>2020</b:Year>
+    <b:URL>https://globalnutritionreport.org/resources/nutrition-profiles/asia/southern-asia/sri-lanka/</b:URL>
+    <b:RefOrder>11</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Vipulaguna2025</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Vipulaguna</b:Last>
+            <b:First>D.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Food security and its impact on growth among Sri Lankan children under five during the economic crisis in 2022</b:Title>
+    <b:JournalName>BMC Nutrition</b:JournalName>
+    <b:Year>2025</b:Year>
+    <b:URL>https://doi.org/10.1186/s40795-024-00979-y</b:URL>
+    <b:RefOrder>12</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>WHO2019</b:Tag>
+    <b:SourceType>ElectronicSource</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>World Health Organization</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Childhood malnutrition in Sri Lanka: a road map for the last mile</b:Title>
+    <b:Year>2019</b:Year>
+    <b:URL>https://www.who.int/publications/i/item/childhood-malnutrition-in-sri-lanka-a-road-map-for-the-last-mile</b:URL>
+    <b:RefOrder>13</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Sathiadas2021</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Sathiadas</b:Last>
+            <b:First>S.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Nutritional status of school children living in Northern part of Sri Lanka</b:Title>
+    <b:JournalName>BMC Pediatrics</b:JournalName>
+    <b:Year>2021</b:Year>
+    <b:Volume>21</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:Pages>1-8</b:Pages>
+    <b:URL>https://doi.org/10.1186/s12887-021-02501-w</b:URL>
+    <b:RefOrder>14</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>YaleSPH2018</b:Tag>
+    <b:SourceType>ElectronicSource</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Yale School of Public Health</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Public Health Midwives in Sri Lanka</b:Title>
+    <b:Year>2018</b:Year>
+    <b:URL>https://ysph.yale.edu/news-article/public-health-midwives-in-sri-lanka/</b:URL>
+    <b:RefOrder>15</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Gavi2022</b:Tag>
+    <b:SourceType>ElectronicSource</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Gavi</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Keeping communities healthy: Meet the midwives of Sri Lanka</b:Title>
+    <b:Year>2022</b:Year>
+    <b:URL>https://www.gavi.org/vaccineswork/meet-midwives-sri-lanka</b:URL>
+    <b:RefOrder>16</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Gavi2024</b:Tag>
+    <b:SourceType>ElectronicSource</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Gavi</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Always on call: in Sri Lanka, a community midwife's work never stops</b:Title>
+    <b:Year>2024</b:Year>
+    <b:URL>https://www.gavi.org/vaccineswork/always-call-sri-lanka-community-midwifes-work-never-stops</b:URL>
+    <b:RefOrder>17</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Guyon2016</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Guyon</b:Last>
+            <b:First>A.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Mobile-Based Nutrition and Child Health Monitoring to Inform Program Development: An Experience From Liberia</b:Title>
+    <b:JournalName>Global Health: Science and Practice</b:JournalName>
+    <b:Year>2016</b:Year>
+    <b:Volume>4</b:Volume>
+    <b:Issue>4</b:Issue>
+    <b:Pages>661-670</b:Pages>
+    <b:URL>https://doi.org/10.9745/GHSP-D-16-00189</b:URL>
+    <b:RefOrder>18</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>TonkinCrine2020</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Tonkin-Crine</b:Last>
+            <b:First>S.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>A systematic evaluation of digital nutrition promotion websites and apps for supporting parents to influence children's nutrition</b:Title>
+    <b:JournalName>International Journal of Behavioral Nutrition and Physical Activity</b:JournalName>
+    <b:Year>2020</b:Year>
+    <b:Volume>17</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:Pages>1-17</b:Pages>
+    <b:URL>https://doi.org/10.1186/s12966-020-0915-1</b:URL>
+    <b:RefOrder>19</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Author2023</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Author</b:Last>
+            <b:First>A.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Improving nutritional status of children using artificial intelligence-based mobile application postsurgery: randomised controlled trial</b:Title>
+    <b:JournalName>BMJ Nutrition, Prevention &amp; Health</b:JournalName>
+    <b:Year>2023</b:Year>
+    <b:URL>https://doi.org/10.1136/bmjnph-2023-000645</b:URL>
+    <b:RefOrder>20</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Romanello2018</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Romanello</b:Last>
+            <b:First>M.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Influence of Parental Healthy-Eating Attitudes and Nutritional Knowledge on Nutritional Adequacy and Diet Quality among Preschoolers: The SENDO Project</b:Title>
+    <b:JournalName>Nutrients</b:JournalName>
+    <b:Year>2018</b:Year>
+    <b:Volume>10</b:Volume>
+    <b:Issue>12</b:Issue>
+    <b:Pages>1875</b:Pages>
+    <b:URL>https://doi.org/10.3390/nu10121875</b:URL>
+    <b:RefOrder>21</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Alderman2017</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Alderman</b:Last>
+            <b:First>T.</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Headey</b:Last>
+            <b:First>D. D.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>How Important is Parental Education for Child Nutrition?</b:Title>
+    <b:JournalName>World Development</b:JournalName>
+    <b:Year>2017</b:Year>
+    <b:Volume>94</b:Volume>
+    <b:Pages>448-464</b:Pages>
+    <b:URL>https://doi.org/10.1016/j.worlddev.2017.02.007</b:URL>
+    <b:RefOrder>22</b:RefOrder>
+  </b:Source>
+  
+  <b:Source>
+    <b:Tag>Gawlik2022</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Gawlik</b:Last>
+            <b:First>A.</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>The Influence of Parents' Nutritional Education Program on Their Infants' Metabolic Health</b:Title>
+    <b:JournalName>Nutrients</b:JournalName>
+    <b:Year>2022</b:Year>
+    <b:Volume>14</b:Volume>
+    <b:Issue>13</b:Issue>
+    <b:Pages>2670</b:Pages>
+    <b:URL>https://doi.org/10.3390/nu14132670</b:URL>
+    <b:RefOrder>23</b:RefOrder>
+  </b:Source>
+</b:Sources>

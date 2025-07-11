@@ -1,0 +1,9 @@
+{
+  "cssTheme": "Glass Robo",
+  "accentColor": "#b5b800",
+  "baseFontSize": 19,
+  "baseFontSizeAction": true,
+  "nativeMenus": false,
+  "showRibbon": true,
+  "showViewHeader": true
+}

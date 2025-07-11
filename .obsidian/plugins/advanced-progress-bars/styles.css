@@ -1,0 +1,342 @@
+:root {
+    color-scheme: light dark;
+}
+
+.kofi-button {
+    flex: 1 0;
+    height: 22px;
+    height: auto;	
+    margin: 0 10px;
+    width: 140px;
+}
+
+.header-highlight {
+    color: #689DED;
+    font-size: large;
+    font-weight: bold;
+}
+
+.highlight-text {
+    color: light-dark(#ec7e83, #71d1c4);
+}
+
+.custom-textbox {
+    width: 60px;
+}
+
+.custom-container {
+	align-Items: center;
+	border-Radius: 7px;
+	border: 1px solid #689ded;		
+	display: flex;
+	justify-Content: space-between;
+	margin: 0px;
+}
+
+.custom-container img {
+    padding-right: 1em;
+}
+
+.custom-container p {
+    color: #8fa0ba;
+    flex: 1 1 auto;
+    min-width: 10px;     
+    overflow: hidden;
+    padding-left: 1em;
+    white-space: wrap;
+}
+
+.progressBar-container {
+    border-radius: 7px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;   
+    justify-content: center;
+    margin-top: 7px;   
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.progressBar-text-container {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 0 0.3em 0;
+    width: 100%;
+}
+
+.progressBar-title {
+    color: #8fa0ba;
+    flex: 1 1 0;
+    min-width: 10px;     
+    overflow: hidden;
+    padding: 0 0.3em;
+    text-overflow: ellipsis;  
+    white-space: nowrap;
+    width: 10px;
+}
+
+.progressBar-percentage {
+    color: #c1d7f9;
+    flex: 0 0 auto;
+    padding: 0 0 0 0.3em;
+    text-align: right;
+}
+
+.progressBar-value {
+    color: #8fa0ba;
+    flex: 0 0 auto;
+    padding: 0 0.3em;
+    text-align: right;
+}
+
+.progressBar-completed {
+    color: #c1d7f9;
+    font-size: 0.75em;
+    font-weight: 500;
+    padding: 0 0 0 0.3em;    
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;               
+    width: 100%;
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    line-height: normal; /* Prevent line-height from affecting centering */
+    z-index: 1; /* Ensure text is below the mask but above the background */
+}
+
+.progressBar-subtask {
+    align-items: center;
+    flex: 0 1 auto;
+    font-size: 0.6em;
+    font-weight: 500;
+    justify-content: center;
+    margin: 0.3em 0.3em 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.progressBar-subtask-completed {
+    align-items: center;
+    flex: 0 1 auto;
+    font-size: 0.6em;
+    font-weight: 700;
+    justify-content: center;
+    margin: 0.3em 0.3em 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.progressBar-background {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    display: flex;
+}
+
+.progressBar {
+	display: flex;
+	justify-Content: space-between;
+	margin: 0px;
+    align-Items: center;
+    position: relative;
+    margin-left: auto;
+}
+
+.demo-progressBar {
+	display: flex;
+	justify-Content: space-between;
+	margin: 0px;
+    align-Items: center;
+}
+
+.marks {
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;    
+  }
+
+.mark {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+.error-container {
+    background:#912f3c;
+    border-radius: 7px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+}
+
+.error-text-container {
+    align-items: center;
+    color:#ffffff;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    padding: 0.3em;
+    width: 100%;
+}
+
+#APB_tag {
+    border-radius: 3px;
+    margin-right: 5px;
+    overflow: hidden;
+    padding: 0 5px;
+    font-size: 0.7rem;
+}
+
+#APB_notag {
+    border-radius: 3px;
+    border: 1px solid #912f3c;
+    color: #ffffff;
+    margin-right: 5px;
+    overflow: hidden;
+    padding: 0 5px;
+    font-size: 0.7rem;
+    background: #912f3c;
+}
+
+#APB_tasksDisabled {
+    border-radius: 3px;
+    border: 1px solid #912f3c;
+    color: #ffffff;
+    margin-right: 5px;
+    overflow: hidden;
+    padding: 0 5px;
+    font-size: 0.7rem;
+    background: #912f3c;
+}
+
+li.apb-list-item .list-bullet {
+    display: none !important;
+}
+
+.template-setting-row .setting-item-info  {  
+    display: flex;
+    flex: 0 1 auto !important;
+}
+
+.template-setting-row .setting-item-info .setting-item-name {
+    color:#666666;
+}
+
+.settings-row-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.settings-row-headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#666666;
+}
+
+.settings-row-header {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 1.2;
+    display: flex;
+    align-items: flex-end;
+}
+.settings-row-header.gradient-header {
+    white-space: normal;
+    max-width: 80px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 20px;
+    background: #f0f0f0; /* Unfilled part = light gray */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+.APB {
+    position: relative;
+    overflow: visible; /* Allow mask to render outside bounds */
+}
+
+.progressBar-filled {
+    position: relative;    
+}
+
+.progressBar-mask, .progressBar-mask * {
+    background-color: transparent !important;
+}
+
+.block-language-apb {
+    box-sizing: border-box;
+}
+
+
+.template-setting-row .subtle-button {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    opacity: 0.5; /* Lower opacity to make less noticeable */
+    filter: grayscale(50%); /* Muted color effect */
+    background-color: transparent; /* Remove default background */
+    border: none; /* Remove border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .template-setting-row .subtle-button svg {
+    width: 20px; /* Smaller icon size */
+    height: 20px;
+  }
+  
+  .template-setting-row .subtle-button:hover {
+    opacity: 1; /* Full opacity on hover for usability */
+    filter: none; /* Remove grayscale on hover */
+  }
+  
+  .template-setting-row .subtle-button:disabled {
+    opacity: 0.3; /* Even fainter when disabled */
+    cursor: not-allowed;
+  }
+
+  .default-setting-row .spacer-button {
+    width: 84px;
+    height: 10px;   
+    opacity: 0; /* Completely invisible */
+    background-color: transparent;
+    border: none;
+    pointer-events: none; /* Prevent interaction */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .default-setting-row .spacer-button svg {
+    width: 20px; /* Smaller icon size */
+    height: 20px;
+  }

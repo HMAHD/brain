@@ -1,0 +1,70 @@
+---
+deleted: true
+title: postgresql
+created: '2024-08-23T06:33:26.913Z'
+modified: '2024-08-23T09:09:08.325Z'
+---
+
+# postgresql
+
+## Understood. If you want to create and use a database directly on your EC2 instance, you can do that. Here's a step-by-step guide to set up PostgreSQL on your EC2 instance and configure your application to use it:
+
+1. Install PostgreSQL on EC2:
+      sudo apt update
+   sudo apt install postgresql postgresql-contrib
+   
+2. Start PostgreSQL service:
+      sudo systemctl start postgresql
+   sudo systemctl enable postgresql
+   
+3. Switch to the postgres user:
+      sudo -i -u postgres
+   
+4. Create a new database and user:
+      createdb your_database_name
+   createuser --interactive --pwprompt
+      Follow the prompts to create a new user, set a password, and grant necessary permissions.
+
+5. Exit the postgres user:
+      exit
+   
+6. Configure PostgreSQL to allow connections from your application:
+   Edit the PostgreSQL configuration file:
+      sudo nano /etc/postgresql/12/main/postgresql.conf
+      Uncomment and modify the listen_addresses line:
+      listen_addresses = 'localhost'
+      Save and exit.
+
+7. Edit the client authentication configuration file:
+      sudo nano /etc/postgresql/12/main/pg_hba.conf
+      Add this line at the end of the file:
+      host    all             all             127.0.0.1/32            md5
+      Save and exit.
+
+8. Restart PostgreSQL:
+      sudo systemctl restart postgresql
+   
+Now, update your `.env` file with the following:
+
+WEB_PORT=3000
+API_HOST=http://localhost:4000
+API_PORT=4000
+API_DB=postgres://your_db_user:your_db_password@localhost:5432/your_database_name
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
+DB_NAME=your_database_name
+DB_PORT=5432
+
+Replace `your_db_user`, `your_db_password`, and `your_database_name` with the values you set when creating the database and user.
+
+9. Modify your `docker-compose.yaml` file:
+   Remove the `db` service if it's present. Your services should now only include `web`, `api`, and `nginx`.
+
+10. Update your API application's database configuration to use the new connection string.
+
+11. Run your Docker Compose setup:
+        docker-compose up --build
+    
+This configuration will use the PostgreSQL database installed directly on your EC2 instance rather than running it in a Docker container. Make sure your application has the necessary permissions to access the database.
+
+Remember to secure your EC2 instance and database properly, including setting up a firewall, using strong passwords, and regularly updating your system.

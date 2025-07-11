@@ -1,0 +1,1 @@
+https://github.com/yoheinakajima/ditto - Ditto is a user-friendly tool that allows you to generate a multi-file Flask application

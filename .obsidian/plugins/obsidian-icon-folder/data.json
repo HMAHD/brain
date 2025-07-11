@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "emojiStyle": "twemoji",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "🖥",
+      "⚜",
+      "🌐",
+      "FabReact",
+      "FabWordpress"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "Knowladge/Interesting things to read.md": "RiEmotionHappyFill",
+  "Knowladge/Knowledge.md": "FabCentercode",
+  "Research/LLM resources.md": "🕯",
+  "Others/China WEB.md": "🫤",
+  "Others/Links For Check - weboasis.md": "RiLinksFill",
+  "Prompt Engineering.md": "FabConnectdevelop",
+  "Work -job/Template Readme.md.md": "⚜",
+  "CashBook": "🖥"
+}

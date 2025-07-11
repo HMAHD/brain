@@ -1,0 +1,262 @@
+{
+  "main": {
+    "id": "daaf3788d55af859",
+    "type": "split",
+    "children": [
+      {
+        "id": "1bebf8a4f3be4dd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1df7de885f3a496d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learning - Degree/IoT Fundamentals A Comprehensive Study Guide.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "IoT Fundamentals A Comprehensive Study Guide"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "53ba0be8ca625cf4",
+    "type": "split",
+    "children": [
+      {
+        "id": "338720ac4e0ab4e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c1b050607b9b8a0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5dda85be279374c4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4fe0752d64ab537e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "251de78af5680940",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f601dfc0966d877",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61e736c7ba0c8634",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Fixes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Fixes"
+            }
+          },
+          {
+            "id": "b98b0e2a72d6208b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "94da78c5e7deec5a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "497e027ab619c6e0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "6e5dc2a8da784ca1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "5e61efb9afc39c35",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          },
+          {
+            "id": "3f653cc21ea03699",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {},
+              "icon": "cloud",
+              "title": "QuickShare"
+            }
+          },
+          {
+            "id": "0c591b7d79870209",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 371.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "1df7de885f3a496d",
+  "lastOpenFiles": [
+    "Learning - Degree/IOT.md",
+    "Learning - Degree/IoT Fundamentals A Comprehensive Study Guide.md",
+    "Prompt Engineering.md",
+    "Smart Bus Overcrowding Detection/System Overview.md",
+    "Smart Bus Overcrowding Detection/Smart Data Transmission.md",
+    "Smart Bus Overcrowding Detection/Smart Bus Dashboard Integration Guide.md",
+    "Smart Bus Overcrowding Detection/Hybrid Visualization Approach for Your Report.md",
+    "Smart Bus Overcrowding Detection/How to Generate Data and Create Infographics.md",
+    "Smart Bus Overcrowding Detection/Controller Selection Guide ESP32 vs Arduino for Smart Bus System.md",
+    "Smart Bus Overcrowding Detection/Clean Component Connection Diagram.md",
+    "Smart Bus Overcrowding Detection/Diagrams/Diagrams.md",
+    "Smart Bus Overcrowding Detection/Diagrams/Untitled.canvas",
+    "Smart Bus Overcrowding Detection/Diagrams",
+    "Untitled.md",
+    "Smart Bus Overcrowding Detection",
+    "Revised Exam Paper.md",
+    "Screenshot 2025-05-11 133532.png",
+    "Pasted image 20250704175303.png",
+    "Pasted image 20250704175207.png",
+    "Pasted image 20250704174919.png",
+    "Learning - Degree/Comprehensive Study Guide Information Systems in Global Business Today.md",
+    "Exam Paper.md",
+    "Work -job/SSH Key for VPS and GitHub.md",
+    "Work -job/VPS/🖥️ info.lankatool@gmail.com - 147.93.31.17.md",
+    "Work -job/API Collection.md",
+    "Work -job/Deploying a Python App on a VPS with PM2.md",
+    "Work -job/Deploying FastAPI on an Open Cloud VPS.md",
+    "Work -job/Deploying MERN Stack Project on VPS.md",
+    "Work -job/MongoDB Useful Commands.md",
+    "Work -job/MySQL Database on Ubuntu VPS.md",
+    "Work -job/Template Readme.md.md",
+    "Work -job/Updating React Frontend from GitHub and Rebuilding.md",
+    "notes/WEB SERVICES.md",
+    "notes/Stats 3.pdf",
+    "notes/Stats 2.pdf",
+    "notes/Stats 1.pdf",
+    "notes/DEA 1.pdf",
+    "Tags",
+    "Untitled.canvas",
+    "Learning/Data Science Cheat Sheet - Python",
+    "Learning/Go Lang/Go Fuzzing/Pasted image 20220315212717.png",
+    "Learning/Go Lang/Diagnostics/Pasted image 20220904104650.png",
+    "Learning/Go Lang/Diagnostics/Pasted image 20220616192116.png",
+    "Learning/Go Lang/Diagnostics/Pasted image 20220315230521.png",
+    "Learning/Go Lang/Writing Web Applications",
+    "Learning/Go Lang/Managing dependencies",
+    "Screenshot 2025-05-11 133714.png",
+    "Screenshot 2025-05-11 133621.png"
+  ]
+}
