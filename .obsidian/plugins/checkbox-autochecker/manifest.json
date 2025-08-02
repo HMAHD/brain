@@ -1,0 +1,10 @@
+{
+  "id": "checkbox-autochecker",
+  "name": "Checkbox Autochecker",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Automatically sync parent and child checkboxes with flexible propagation modes in Markdown Files.",
+  "author": "Klaas Klee",
+  "authorUrl": "https://github.com/klaasklee",
+  "isDesktopOnly": true
+}

@@ -39,6 +39,53 @@ name: Zen
 id: zen
 settings:
 	-
+		id: window-header
+		title: Window Settings
+		title.zh: 窗体设置
+		description: Adjust the window settings. Affects all parts except the editor area.
+		description.zh: 调整窗体设置，影响除编辑器区外的所有部分。
+		type: heading
+		level: 1
+		collapsed: true
+	-
+		id: window-brightness
+		title: Brightness of window.
+		title.zh: 窗体的亮度
+		description: Adjust the brightness of the entire form。
+		description.zh: 调整整个窗体的亮度。
+		type: variable-number-slider
+		default: 0.96
+		min: 0.5
+		max: 1.5
+		step: 0.01
+	-
+		id: window-font-size
+		title: Adjust the font of the Window.
+		title.zh: 调整窗体的字体
+		description: Adjust the font size of some parts, including the document directory on the left, the document title on the top, the outline directory on the right, the tag list, and so on.
+		description.zh: 调节部分字体大小，包含左侧文档目录、顶部文档标题、右侧大纲目录、标签列表等等。
+		type: variable-number-slider
+		default: 15
+		min: 8
+		max: 30
+		step: 1
+	-
+		id: close-left-vault-profile
+		title: Close left vault profile.
+		title.zh: 将仓库切换放置为默认底部
+		description: Switch the vault profile to the default bottom.
+		description.zh: 将仓库切换放置为默认底部。新版改为在底部，不太喜欢，这里调整为原来的左侧。
+		type: class-toggle
+	-
+		id: editor-header
+		title: Editor Settings
+		title.zh: 编辑器设置
+		description: Adjust the editor settings. Affects only the editor area.
+		description.zh: 调整编辑器设置，影响编辑器区。
+		type: heading
+		level: 1
+		collapsed: true
+	-
 		id: alt-heading-off
 		title: Hide the Heading prompt in the editor.
 		title.zh: 隐藏编辑器中标题提示
@@ -53,22 +100,11 @@ settings:
 		description.zh: 隐藏各级标题前面的 h1...h2...等小标题下的线虚
 		type: class-toggle
 	-
-		id: window-font-size
-		title: Adjust the font of the Window.
-		title.zh: 调整窗体的字体
-		description: Adjust the font size of some parts, including the document directory on the left, the document title on the top, the outline directory on the right, the tag list, and so on.
-		description.zh: 调节部分字体大小，包含左侧文档目录、顶部文档标题、右侧大纲目录、标签列表等等。
-		type: variable-number-slider
-		default: 15
-		min: 8
-		max: 30
-		step: 1
-	-
 		id: text-justify
 		title: Open text justification.
 		title.zh: 打开文本两端对齐
-		description: Default text is left-aligned. If it is turned off, it is justified.
-		description.zh: 默认文本左对齐，关闭则两端对齐。
+		description: Default text is left-aligned. If it is turned on, it is justified.
+		description.zh: 默认文本左对齐，打开则两端对齐。
 		type: class-toggle
 	-
 		id: editor-width
@@ -99,20 +135,26 @@ settings:
 		description: Adjust the height of the text line.
 		description.zh: 调整文本行高。
 		type: variable-number-slider
-		default: 30
+		default: 32
 		min: 20
 		max: 40
 		step: 1
 	-
-		id: close-left-vault-profile
-		title: Close left vault profile.
-		title.zh: 将仓库切换放置为默认底部
-		description: Switch the vault profile to the default bottom.
-		description.zh: 将仓库切换放置为默认底部。新版改为在底部，不太喜欢，这里调整为原来的左侧。
-		type: class-toggle
+		id: editor-brightness
+		title: Brightness of editor.
+		title.zh: 窗体编辑区的亮度
+		description: Adjust the brightness of the middle editor area.
+		description.zh: 调整中间编辑器区的亮度。
+		type: variable-number-slider
+		default: 1
+		min: 0
+		max: 5
+		step: 0.01
 	-
 		id: windows-header
 		title: Windows/Linux
+		description: Only valid for Windows/Linux.
+		description.zh: 仅对Windows/Linux 有效。
 		type: heading
 		level: 1
 		collapsed: true
@@ -127,10 +169,10 @@ settings:
 		id: win-window-opacity
 		title: Transparency of window background
 		title.zh: 窗体背景的透明度
-		description: Adjust the transparency of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：For dark colors：0.4. For light colors：0.2.
-		description.zh: 调整 Windows/Linux 平台的窗体背景的透明度。仅对 Windows/Linux 有效。推荐值：暗色：0.4 亮色：0.2
+		description: Adjust the transparency of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：For dark colors：0.2. For light colors：0.15.
+		description.zh: 调整 Windows/Linux 平台的窗体背景的透明度。仅对 Windows/Linux 有效。推荐值：暗色：0.2 亮色：0.15
 		type: variable-number-slider
-		default: 0.2
+		default: 0.15
 		min: 0
 		max: 1
 		step: 0.01
@@ -138,10 +180,10 @@ settings:
 		id: win-window-brightness
 		title: Brightness of form background.
 		title.zh: 窗体背景的亮度
-		description: Adjust the brightness of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：dark：0.3, light：0.6.
-		description.zh: 调整 Windows/Linux 平台的窗体背景的亮度。仅对 Windows/Linux 有效。推荐值：暗色：0.3 亮色：0.6
+		description: Adjust the brightness of the form background on the Windows/Linux platform. Only effective for Windows/Linux. Recommended values：0.9.
+		description.zh: 调整 Windows/Linux 平台的窗体背景的亮度。仅对 Windows/Linux 有效。推荐值：0.9
 		type: variable-number-slider
-		default: 0.4
+		default: 0.9
 		min: 0
 		max: 1
 		step: 0.01
@@ -149,13 +191,24 @@ settings:
 		id: win-bg-image-url
 		title: the background picture of the window
 		title.zh: 窗体背景图片
-		description: Set the background picture of the window.
-		description.zh: 设置窗体背景图片；
+		description: Set the form background image; fill the image URL between the quotes; leave blank for no background image by default.
+		description.zh: 设置窗体背景图片；将图片地址填入''号中间；若不填则默认无背景图片
 		type: variable-text
-		default: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+		default: url('')
+	- 
+		id: win-editor-bg-color
+		title: Adjust the color of the middle editing area.
+		title.zh: 调整中间编辑区的颜色
+		type: variable-themed-color
+		opacity: true
+		format: hex
+		default-light: "#f0f0f0a6"
+		default-dark: "#121212a6"
 	-
 		id: macos-header
-		title: MacOS
+		title: macOS
+		description: Only valid for macOS.
+		description.zh: macOS 有效。
 		type: heading
 		level: 1
 		collapsed: true
@@ -166,10 +219,19 @@ settings:
 		description: Adjust the transparency of the window background on the Mac platform. Only effective for macOS, and the translucent effect switch is turned on in Settings -> Appearance.
 		description.zh: 调整 mac 平台的窗体背景的透明度。仅对 macOS 有效，且在设置 -> 外观中打开了半透明效果开关
 		type: variable-number-slider
-		default: 0.15
+		default: 0
 		min: 0
 		max: 1
 		step: 0.01
+	- 
+		id: editor-bg-color
+		title: Adjust the color of the middle editing area.
+		title.zh: 调整中间编辑区的颜色
+		type: variable-themed-color
+		opacity: true
+		format: hex
+		default-light: "#ffffff80"
+		default-dark: "#1c1c1ca6"
 
 
 */
@@ -208,18 +270,29 @@ body {
 	--file-line-width: calc(var(--editor-width) * 1px);
 	--nav-item-children-padding-start: 1px;
 	--window-font-size: 15;
-	--mac-window-opacity: 0.15;
-	--win-bg-image-url: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+	--mac-window-opacity: 0;
+	--win-bg-image-url: url('');
 	--input-radius: 14px;
 	--callout-content-padding: 4px;
 	--text-paragraph-gap: 3.2px;
-	--text-line-height: 30px;
+	--text-line-height: 32px;
+	--window-brightness: 0.96;
+	--editor-brightness: 1;
+	--bases-table-header-background: var(--table-header-background);
+	--bases-table-row-height: 40px;
+	--italic-color: var(--text-accent);
 }
 
 body.is-mobile {
 	--window-font-size: calc(var(--window-font-size) * 0.9);
 	--input-radius: 20px;
-	--safe-area-inset-bottom: env(safe-area-inset-bottom);
+	/* --safe-area-inset-bottom: env(safe-area-inset-bottom); */
+	--mobile-sidebar-radius: 34px;
+	--mobile-sidebar-max-width: 90%;
+}
+
+body.is-translucent {
+	--nav-item-background-active: transparent;
 }
 
 .theme-dark {
@@ -227,14 +300,13 @@ body.is-mobile {
 	/* 顶部导航栏背景色 */
 	--titlebar-background: rgb(42, 42, 42);
 	/* 中间编辑器的背景色 */
-	--background-primary: rgb(28, 28, 28);
 	--background-secondary: rgb(42, 42, 42);
 	--background-secondary-alt: rgb(42, 42, 42);
 	/* --ribbon-background: rgba(36, 36, 36, 1); */
 	--background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
-	--nav-item-background-active: rgba(245, 245, 245, 0.05);
+	--nav-item-background-active: rgba(245, 245, 245, 0.1);
 	--nav-item-color-active: var(--text-accent);
-	--nav-indentation-guide-color: rgba(245, 245, 245, 0.08);
+	--nav-indentation-guide-color: rgba(245, 245, 245, 0.1);
 	--background-modifier-border: rgba(245, 245, 245, 0.09);
 	--background-modifier-hover: rgba(245, 245, 245, 0.1);
 	--floating-toc-background-color: transparent;
@@ -242,37 +314,47 @@ body.is-mobile {
 	--indentation-guide-color: rgba(245, 245, 245, 0.08);
 	--block-border-color: rgba(245, 245, 245, 0.3);
 	--hr-color: rgba(245, 245, 245, 0.2);
-	--table-header-background: rgba(245, 245, 245, 0.2);
+	--table-header-background: rgba(245, 245, 245, 0.1);
 	--indentation-guide-color-active: var(--indentation-guide-color);
 	--scrollbar-thumb-color: rgba(255, 255, 255, 0.2);
-	--workspace-background-translucent: hsla(0, 0%, 0%, 0.2);
-	--text-color: rgb(220, 220, 220);
+	--workspace-background-translucent: hsla(0, 0%, 0%, 0.3);
+	--text-color: rgb(240, 240, 240);
+	--tree-item-color: rgba(210, 210, 210, 0.8);
 	--active-border-color: rgba(0, 157, 255, 0.8);
 	--statusbar-bg-color: rgba(28, 28, 28, 0.7);
-	--model-bg-color: rgba(28, 28, 28, 0.5);
+	--model-bg-color: rgba(28, 28, 28, 0.1);
 	--app-model-bg-color: rgba(28, 28, 28, 0.8);
-	--editor-bg-color: rgba(28, 28, 28, .65);
+	--editor-bg-color: rgba(28, 28, 28, 0);
 	--suggestion-bg-color: rgba(28, 28, 28, 0.1);
 	--code-background: rgba(245, 245, 245, 0.15);
 	--background-modifier-form-field: rgba(245, 245, 245, 0.04);
 	--win-blur: 20px;
-	--win-window-brightness: 0.3;
-	--win-editor-bg-color: rgba(18, 18, 18, .65);
-	--win-window-opacity: 0.4;
+	--win-window-brightness: 0.9;
+	--win-editor-bg-color: #121212a6;
+	--win-window-opacity: 0.2;
 	--background-secondary-alt: rgba(18, 18, 18, 0.1);
-	--background-setting-item: rgba(245, 245, 245, 0.05);
+	--background-setting-item: rgba(245, 245, 245, 0.08);
 	--background-setting: rgba(28, 28, 28);
+	--text-highlight-bg: var(--blockquote-border-color);
+	--list-marker-color: var(--nav-indentation-guide-color);
+	--glass-bg-color: rgba(0, 0, 0, 0.15);
+}
+
+body:not(.mod-macos).theme-dark {
+	--indentation-guide-color: rgba(245, 245, 245, 0.1);
+	--nav-indentation-guide-color: rgba(245, 245, 245, 0.1);
+	--list-marker-color: rgba(245, 245, 245, 0.25);
+	--nav-collapse-icon-color: rgba(245, 245, 245, 0.25);
 }
 
 .theme-light {
 	--base-d: 0%;
 	--titlebar-background: rgb(248, 248, 248);
-	--background-primary: rgb(248, 248, 248);
 	--background-secondary: rgb(230, 230, 230);
 	--background-secondary-alt: rgb(230, 230, 230);
 	/* --ribbon-background: rgb(245, 245, 245); */
 	--background-modifier-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
-	--nav-item-background-active: rgba(0, 0, 0, 0.05);
+	--nav-item-background-active: rgba(0, 0, 0, 0.1);
 	--nav-item-color-active: var(--text-accent);
 	--background-modifier-hover: rgba(28, 28, 28, 0.1);
 	--background-modifier-border: rgba(28, 28, 28, 0.09);
@@ -283,32 +365,51 @@ body.is-mobile {
 	--floating-toc-background-color: transparent;
 	--blockquote-border-color: rgba(28, 28, 28, 0.2);
 	--scrollbar-thumb-color: rgba(0, 0, 0, 0.2);
-	--workspace-background-translucent: hsla(0, 0%, 100%, 0.2);
-	--text-color: rgb(10, 10, 10);
+	--workspace-background-translucent: hsla(0, 0%, 100%, 0.05);
+	--text-color: rgb(8, 8, 8);
+	--tree-item-color: rgb(20, 20, 20, 0.8);
 	--active-border-color: rgb(0, 121, 172);
 	--statusbar-bg-color: rgba(248, 248, 248, 0.7);
-	--model-bg-color: rgba(248, 248, 248, 0.5);
+	--model-bg-color: rgba(248, 248, 248, 0.1);
 	--app-model-bg-color: rgba(248, 248, 248, 0.8);
-	--editor-bg-color: rgba(255, 255, 255, 0.5);
+	--editor-bg-color: rgba(255, 255, 255, 0);
 	--suggestion-bg-color: rgba(248, 248, 248, 0.1);
 	--divider-color: rgba(0, 0, 0, 0.01);
   --code-background: rgba(28, 28, 28, 0.1);
 	--background-modifier-form-field: rgba(230, 230, 230, 0.5);
-	--win-blur: 40px;
-	--win-window-brightness: 0.6;
-	--win-editor-bg-color: rgba(240, 240, 240, .65);
-	--win-window-opacity: 0.2;
+	--win-blur: 15px;
+	--win-window-brightness: 0.9;
+	--win-editor-bg-color: #f0f0f0a6;
+	--win-window-opacity: 0.15;
 	--background-secondary-alt: rgba(240, 240, 240, 0.1);
-	--background-setting-item: rgba(28, 28, 28, 0.03);
-	--background-setting: rgba(244, 244, 244);
+	--background-setting-item: rgba(255, 255, 255, 0.3);
+	--background-setting: rgba(255, 255, 255);
+	--text-highlight-bg: var(--blockquote-border-color);
+	--table-header-background: rgba(28, 28, 28, 0.1);
+	--glass-bg-color: rgba(255, 255, 255, 0.15);
 }
 
 .is-mobile.theme-light {
 	--interactive-normal:rgba(248, 248, 248);
+	--card-border-color: rgba(28, 28, 28, 0.05);
 }
 
 .is-mobile.theme-dark {
 	--interactive-normal:rgba(18, 18, 18, 0.6);
+	--indentation-guide-color: rgba(245, 245, 245, 0.1);
+	--card-border-color: rgba(80, 80, 80, 0.05);
+}
+
+.mobile-navbar-actions {
+	--icon-size: 22px;
+}
+
+body:not(.is-mobile) .theme-dark {
+	--background-primary: rgb(28, 28, 28);
+}
+
+body:not(.is-mobile) .theme-light {
+	--background-primary: rgb(248, 248, 248);
 }
 
 /* 设置 mac 平台背景透明度 */
@@ -317,22 +418,142 @@ body.is-mobile {
 	background-color: rgb(from var(--workspace-background-translucent) r g b / calc(var(--mac-window-opacity))) !important;
 }
 
+/* 当有弹窗弹出时，模糊背景 */
+body:has(.modal-container) .app-container {
+    filter: blur(30px) saturate(1.5);
+}
+
+.modal-container.mod-dim .modal,
+body:not(.is-mobile) .status-bar,
+body:not(.is-mobile) .workspace-tab-container {
+	border-radius: var(--radius-xl);
+	background: var(--glass-bg-color);
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+	margin: 0 10px 10px 5px;
+}
+
+.tree-item-self.nav-folder-title.is-clickable.mod-collapsible:hover,
+.tree-item-self.nav-file-title.tappable.is-clickable:hover,
+.nav-file-title.is-active, 
+.nav-folder-title.is-active {
+	border-radius: var(--radius-xl);
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgb(from var(--text-accent) r g b / 0.1));
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+body:not(.is-mobile) .workspace-tab-header-container {
+	border: none;
+	border-top: none !important;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+body:not(.is-mobile) .workspace-tab-header-spacer {
+	display: none;
+}
+
+body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+body:not(.is-mobile) .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container .workspace-tab-header-container-inner,
+body:not(.is-mobile) .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header-container .workspace-tab-header-container-inner {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body:not(.is-mobile) hr.workspace-leaf-resize-handle {
+	opacity: 0 !important;
+}
+
 /*
 * --------------------------------调整全局样式------------------------------------
 */
+
+body {
+	filter: brightness(var(--window-brightness));
+}
+
+.workspace-split.mod-root {
+	filter: brightness(var(--editor-brightness));
+}
+
+.is-mobile .workspace .workspace-drawer.mod-left {
+	box-shadow: 2px 0px 2px var(--card-border-color);
+}
+
+.is-mobile .workspace .workspace-drawer.mod-right {
+	box-shadow: -2px 0px 2px var(--card-border-color);
+}
+
+.is-mobile .float-search-modal-container.modal-container.mod-dim .modal,
+.is-mobile .menu,
+.is-phone .prompt {
+	box-shadow: 0px -4px 5px var(--card-border-color) !important;
+	border-top: solid 0.1px var(--card-border-color) !important;
+}
+
+.theme-dark.is-mobile .prompt,
+.theme-dark.is-mobile .prompt input.prompt-input {
+	background-color: var(--background-primary);
+}
+
+.is-mobile .workspace-drawer.mod-right {
+	border-left: solid 0.5px var(--background-modifier-border);
+	border-bottom-left-radius: var(--radius-l);
+	border-top-left-radius: var(--radius-l);
+}
+
+.is-mobile .workspace-drawer.mod-left {
+	border-right: solid 0.5px var(--background-modifier-border);
+	border-bottom-right-radius: var(--radius-l);
+	border-top-right-radius: var(--radius-l);
+}
+
+.is-mobile .mod-confirmation .modal:not(.mod-lg) {
+	background-color: var(--background-primary)!important;
+}
+
+button:not(.clickable-icon) {
+	border: solid 0.1px var(--card-border-color);
+	box-shadow: 1px 1px 2px var(--background-secondary);
+}
+
+button.mod-cta {
+	--text-color: var(--text-color);
+}
+
+.is-phone .setting-item-control select {
+	background-color: var(--background-modifier-border);
+	box-shadow: 0px 0px 2px var(--background-secondary);
+}
 
 hr.workspace-leaf-resize-handle {
 	/* background-color: var(--scrollbar-thumb-color); */
 }
 
 /* 堆叠模式时，隐藏顶部栏 */
-.mod-stacked .workspace-tab-header-container {
-	display: none;
+.is-translucent:not(.is-fullscreen) .mod-root .mod-top.mod-stacked .workspace-tab-header-container {
+	/* display: none; */
+	/* background-color: var(--background-primary) !important; */
+	background-color: transparent !important;
 }
 
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
-	/* backdrop-filter: blur(25px); */
-	background-color: var(--background-primary) !important;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(15px) saturate(180%);
+	-webkit-backdrop-filter: blur(15px) saturate(180%);
 }
 
 /* .mod-stacked .workspace-tab-container .workspace-leaf.mod-active,
@@ -384,6 +605,15 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 
 .vertical-tab-header {
 	background-color: var(--background-setting);
+}
+
+.workspace-tab-header-inner {
+	border-radius: var(--radius-xl);
+	padding: 4px 8px;
+}
+
+.suggestion-item {
+	border-radius: 20px;
 }
 
 .is-phone .modal.mod-settings .vertical-tab-nav-item-chevron {
@@ -463,19 +693,33 @@ body.is-mobile .nav-file-title {
 .workspace .mod-root .workspace-tab-header-inner-title,
 .tree-item-inner-text {
 	font-size: calc(var(--window-font-size) * 1px) !important;
-	/* font-family: 'number-font' !important; */
+	color: var(--tree-item-color);
+}
+
+.tree-item-self.is-active .tree-item-inner, 
+.tree-item-self.is-active:hover .tree-item-inner.nav-file-title-content, 
+.tree-item-self.is-active .tree-item-inner.nav-file-title-content {
+	color: var(--nav-item-color-active);
 }
 
 /* 调整目录折叠按钮与标题对齐
  * 受 foldernote影响，需要做调整，否则对不齐
  */
 
-.fn-whitespace-stop-collapsing .collapse-icon {
+.tree-item:not(.nav-folder) .collapse-icon {
 	padding-top: 0 !important;
 }
 
+.fn-whitespace-stop-collapsing .collapse-icon {
+	padding-top: 0px !important;
+}
+
+.novel-word-count--active .nav-files-container .nav-folder-title {
+	align-items: center;
+}
+
 .fn-whitespace-stop-collapsing .nav-files-container .collapse-icon {
-	margin-top: 3.5px;
+	/* margin-top: 3.5px; */
 }
 
 .folder-note-underline .has-folder-note .nav-folder-title-content {
@@ -494,25 +738,40 @@ body.is-mobile .nav-file-title {
 /* 设置目录标题前缀•◦∘ */
 .tree-item-inner.nav-file-title-content::before {
 	content: "•";
-	font-weight: bolder;
 	padding-right: 5px;
 	color: var(--nav-collapse-icon-color);
 	margin-left: -0.5px;
+	font-family: 'number-font' !important;
+	font-size: 10px;	
 }
 
-.is-mobile .tree-item-inner.nav-folder-title-content {
-	/* background-color: red; */
-	transform: translateX(-3px) !important;
+.is-mobile .tree-item-inner.nav-file-title-content::before {
+	font-size: 10px;	
+	margin-left: -1px;
 }
 
 .is-mobile .tree-item-inner.nav-file-title-content {
-	transform: translateX(-2px) !important;
+	padding-top: 1.4px;
+	padding-bottom: 1.4px;
+}
+
+.is-mobile .tree-item-inner.nav-folder-title-content {
+	transform: translateX(-1px) !important;
+}
+
+.is-mobile .tree-item-inner.nav-file-title-content {
+	transform: translateX(-1px) !important;
 }
 
 
 .tree-item-inner.nav-folder-title-content {
-	margin-left: -3px;
+	margin-left: -2px;
 }
+
+.is-mobile .tree-item-inner.nav-folder-title-content {
+	margin-left: -1px;
+}
+
 
 .tree-item-inner:has(.tag-pane-tag-parent) {
 	margin-left: -3px;
@@ -528,8 +787,7 @@ body.is-mobile .nav-file-title {
 
 /* 设置大纲样式 */
 .workspace-leaf-content[data-type='outline'] .tree-item-self:not(.mod-collapsible) .tree-item-inner {
-	/* background-color: red; */
-	margin-left: -15px;
+	margin-left: -15.5px;
 }
 
 .workspace-leaf-content[data-type='outline'] .tree-item-self.mod-collapsible .tree-item-inner {
@@ -537,11 +795,15 @@ body.is-mobile .nav-file-title {
 }
 
 .workspace-leaf-content[data-type='outline'] .tree-item-self:not(.mod-collapsible) .tree-item-inner::before {
-	/* background-color: aqua; */
 	content: "•";
 	font-weight: bolder;
-	padding-right: 3px;
+	padding-right: 4px;
 	color: var(--nav-collapse-icon-color);
+	font-size: 10px;
+	width: 8px;
+	text-align: center;
+	display: inline-block;
+	font-family: 'number-font' !important;
 }
 
 
@@ -557,26 +819,9 @@ body.is-mobile .nav-file-title {
 
 /* 底部状态栏样式 */
 .status-bar {
+	color: var(--text-color);
 	padding: 5px 8px;
-	border-radius: 18px;
-	border-top: 1px solid var(--background-modifier-border);
-	border-left: 1px solid var(--background-modifier-border);
 	gap: 15px;
-	backdrop-filter: blur(20px);
-	background-color: var(--statusbar-bg-color) !important;
-}
-
-.status-bar::before {
-	content: '';
-	z-index: -1;
-	filter: blur(20px);
-	background-color: var(--app-model-bg-color) !important;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	/* backdrop-filter: blur(10px); */
 }
 
 .popover {
@@ -603,7 +848,7 @@ body.is-mobile .nav-file-title {
 
 /* 隐藏预览按钮 */
 .view-actions button:nth-child(2) {
-	display: none;
+	/* display: none; */
 }
 
 /* 暗色主题时的字体颜色 */
@@ -639,11 +884,10 @@ ol {
 	line-height: calc(var(--text-line-height) * 1px);
 	padding-top: calc(var(--text-paragraph-gap) * 1px);
 	padding-bottom: calc(var(--text-paragraph-gap) * 1px);
-	text-align: left;
 }
 
 body.text-justify .mod-cm6 .cm-editor .cm-line,
-body.text-justify p,
+body.text-justify p:not([align="right"]):not([align="left"]),
 body.text-justify li,
 body.text-justify ol {
 	text-align: justify;
@@ -655,11 +899,13 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 /* 调整高亮颜色 */
+span.is-flashing,
+.markdown-rendered mark,
 .cm-s-obsidian span.cm-highlight {
-	background-color: var(--text-accent);
-	color: white !important;
-	padding: 2px 5px;
-	border-radius: 8px;
+	padding: 3px 6px;
+	border-radius: 13px;
+	color: var(--text-normal);
+	background-color: rgb(from var(--text-accent) r g b / 0.4) !important;
 }
 
 strong,
@@ -675,7 +921,8 @@ strong,
 	margin-bottom: var(--inline-title-margin-bottom);
 }
 
-body:not(.heading-bottom-line-off) .inline-title {
+/* 修复白板双下划线 bug */
+body:not(.heading-bottom-line-off) .inline-title:not(:empty):not(:has(h1)):not(:has(h2)):not(:has(h3)):not(:has(h4)):not(:has(h5)):not(:has(h6)) {
 	border-bottom: dashed 0.5px;
 }
 
@@ -722,6 +969,11 @@ hr {
 	background-color: transparent;
 }
 
+.graph-view.color-line {
+	color: var(--text-normal);
+	opacity: 0.3;
+}
+
 /* 
 * 调整标题的上下间距，以及颜色字体等样式
 */
@@ -739,9 +991,15 @@ body:not(.heading-bottom-line-off) .cm-s-obsidian .HyperMD-header {
 	/* margin-bottom: 10px !important; */
 	padding-bottom: 0;
 }
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-list-line):not(.HyperMD-header):not(:has(.cm-hashtag.cm-meta)):has(.cm-list-1) {
+	transform: translateX(-8px);
+
+}
+
 /* 标题下空一行 */
 .cm-s-obsidian .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(:has(>br:only-child)) {
-	padding-top: var(--p-spacing);
+	padding-top: 0.5rem;
 }
 
 h1,
@@ -870,6 +1128,8 @@ body:not(.alt-heading-off) .HyperMD-header-6:before {
 /* 设置左侧目录折叠箭头,往下移，与标题对齐 */
 .tree-item-self .tree-item-icon {
 	/* margin-top: -4px; */
+	display: flex;
+	align-items: center;
 }
 
 
@@ -955,6 +1215,15 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 	margin-inline-start: 5px !important;
 }
 
+.markdown-source-view.mod-cm6 .HyperMD-task-line.cm-line .cm-indent::before {
+	/* margin-inline-start: 10px !important; */
+}
+
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-list-line):not(.HyperMD-header):not(:has(.cm-hashtag.cm-meta)) .cm-indent::before {
+	margin-inline-start: 13px !important;
+}
+
 /* 调整有序列表的缩进线 */
 span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 	padding: 0;
@@ -973,11 +1242,17 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 
 .list-bullet {
 	margin-left: 0.9px;
+	font-family: 'number-font' !important;
+	font-size: 12px;
+}
+
+.markdown-rendered .list-bullet {
+	margin-inline-start: -12px;
 }
 
 /* 有序列表后面的文字左移 */
 .cm-s-obsidian .cm-formatting-list {
-	margin-right: -5.5px;
+	margin-right: -7.5px;
 }
 
 .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
@@ -996,11 +1271,11 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 }
 
 .markdown-source-view.mod-cm6 .task-list-label {
-	margin-left: -10px;
+	margin-left: -9.5px;
 }
 
 .HyperMD-list-line.HyperMD-list-line-2.HyperMD-task-line.cm-line .task-list-label {
-	margin-left: -4px;
+	margin-left: -12px;
 }
 
 u {
@@ -1035,6 +1310,8 @@ body:not(.mod-rtl).fn-whitespace-stop-collapsing .nav-folder-title  {
 
 .tree-item-self {
 	border-radius: var(--radius-l);
+	display: flex;
+	align-items: center;
 }
 
 body.is-mobile .tree-item-self {
@@ -1078,7 +1355,7 @@ ul > li::marker {
 }
 
 .is-mobile .markdown-rendered.show-indentation-guide ol::before {
-	transform: translateX(17px);
+	transform: translateX(-5px);
 }
 
 .mod-windows .markdown-rendered.show-indentation-guide ol::before {
@@ -1118,17 +1395,10 @@ li {
 	padding-top: 0.15em !important;
 }
 
-.markdown-rendered p {
+.markdown-rendered .el-p p {
 	margin: 0;
 	padding-bottom: 0.4em !important;
 	padding-top: 0.4em !important;
-}
-
-.markdown-rendered mark {
-	background-color: var(--text-accent);
-	color: white !important;
-	padding: 2px 5px !important;
-	border-radius: 8px;
 }
 
 .markdown-rendered hr {
@@ -1194,7 +1464,7 @@ body:not(.heading-bottom-line-off) .markdown-rendered h6 {
 
 /* 左侧目录去除左边的空白 */
 body:is(.show-ribbon):not(.is-mobile) .nav-files-container {
-	padding-left: 1px;
+	/* padding-left: 1px; */
 }
 
 
@@ -1209,20 +1479,13 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 }
 
 
-/* 适配手机端，以13Pro Max分辨率为限制 */
-
 .is-mobile .workspace-drawer .nav-buttons-container {
 	--icon-size: var(--icon-m);
 }
 
 /* 移动端底部tab样式 */
-.is-mobile.theme-light .mobile-navbar {
-	border-top: rgba(0, 0, 0, 0.05) solid 0.8px;
-	background-color: transparent;
-}
-
-.is-mobile.theme-dark .mobile-navbar {
-	border-top: rgba(255, 255, 255, 0.08) solid 0.5px;
+.is-mobile .mobile-navbar {
+	border-top: var(--nav-indentation-guide-color) solid 1px;
 	background-color: transparent;
 }
 
@@ -1239,16 +1502,9 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 /* 顶部导航栏样式 */
 .is-mobile .view-header {
 	height: 40px !important;
-	/* display: flex !important; */
 	align-items: center !important;
 	justify-content: center !important;
-	border-bottom: rgba(0, 0, 0, 0.05) solid 0.8px;
-	/* -webkit-backdrop-filter: blur(8px); */
-	/* backdrop-filter: blur(8px); */
-}
-
-.is-mobile.theme-dark .view-header {
-	border-bottom: rgba(255, 255, 255, 0.08) solid 0.5px;
+	border-bottom: var(--nav-indentation-guide-color) solid 1px;
 } 
 
 .is-mobile .mobile-toolbar {
@@ -1283,7 +1539,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 
 .is-mobile.theme-dark .mobile-toolbar-options-container {
 	border-top: rgba(255, 255, 255, 0.08) solid 0.5px;
-	background-color: rgb(49, 49, 49);
+	background-color: #202020;
 }
 
 /* 调整导航栏图标大小 */
@@ -1312,7 +1568,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 }
 
 .is-mobile .markdown-rendered.show-indentation-guide ol::before {
-	margin-left: -20px;
+	/* margin-left: -20px; */
 }
 
 .is-mobile .markdown-rendered.show-indentation-guide ul::before {
@@ -1548,7 +1804,7 @@ tbody>tr>td,
 }
 
 .is-mobile ::-webkit-scrollbar {
-	width: 8px !important;
+	/* width: 8px !important; */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1654,6 +1910,7 @@ body:not(.is-mobile) .nav-header {
 	align-items: center;
 	padding: var(--size-4-1);
 	padding-left: var(--size-4-3);
+	padding-bottom: var(--size-4-4);
 }
 
 body:not(.is-mobile) .nav-buttons-container {
@@ -1727,9 +1984,8 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .wor
 }
 
 .is-translucent.theme-light .status-bar {
-	background-color: rgba(245, 245, 245, 0.8);
-	-webkit-backdrop-filter: blur(100px);
-	backdrop-filter: blur(100px);
+	background-color: rgba(245, 245, 245, 0.1);
+	backdrop-filter: blur(50px) saturate(80%);
 }
 
 .is-translucent.theme-dark .status-bar {
@@ -1769,37 +2025,35 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .wor
 	border-bottom: 1px solid #c1c1c114 !important;
 }
 
-.is-translucent.theme-dark .menu {
-	background: rgba(30, 30, 30, 0.6);
-	backdrop-filter: blur(30px);
-	/* border: none; */
+.is-phone .menu-scroll,
+.is-phone .menu {
+	background-color:  var(--background-primary) !important;
 }
-
-.is-translucent.theme-light .menu {
-	background: rgba(240, 240, 240, 0.6);
-	backdrop-filter: blur(30px);
-	/* border: none; */
-}
-
 
 /* 适配半透明背景 */
 /* .is-focused .workspace-leaf.mod-active .view-header, */
 .is-translucent .view-header {
-	background-color: var(--editor-bg-color) !important;
-}
-
-.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .view-header {
 	background-color: transparent !important;
 }
 
-.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
-	background-color: var(--editor-bg-color) !important;
-	backdrop-filter: blur(20px) !important;
+.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .view-header {
+	/* background-color: var(--app-model-bg-color) !important; */
 }
 
+.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
+	/* background-color: var(--app-model-bg-color) !important;
+	backdrop-filter: blur(25px) saturate(180%);
+	-webkit-backdrop-filter: blur(25px) saturate(180%); */
+
+}
+
+.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header,
+.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .view-header,
+.is-translucent .workspace-tabs.mod-stacked .markdown-source-view.cm-s-obsidian.mod-cm6.node-insert-event.is-readable-line-width.is-live-preview.is-folding,
 .is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
-	backdrop-filter: blur(20px) !important;
-	background-color: var(--editor-bg-color) !important;
+	background-color: var(--model-bg-color) !important;
+	backdrop-filter: blur(25px) saturate(180%);
+	-webkit-backdrop-filter: blur(25px) saturate(180%);
 }
 
 .is-translucent .workspace-split.mod-root .workspace-tabs .view-content {
@@ -1814,8 +2068,32 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .wor
 	background-color: transparent;
 }
 
+.view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+	padding-right: var(--size-4-3);
+}
+
 .workspace-split.mod-root {
 	background-color: transparent;
+}
+
+.is-mobile .modal-container, 
+.is-mobile .modal-container .modal-bg,
+.is-mobile .suggestion-bg,
+.is-mobile .workspace-drawer-backdrop {
+	background: linear-gradient(to bottom, #00000000, var(--app-model-bg-color) 15%, #00000000 110%);
+}
+
+.mobile-tab-switcher {
+	background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary) 10%, var(--background-primary) 100%);
+}
+
+.mobile-tab-switcher-scroll, .mobile-tab-switcher-menubar
+{
+	background-color: transparent !important;
+}
+
+.mobile-tab-wrapper .mobile-tab-preview {
+	box-shadow: 4px 4px 6px var(--card-border-color);
 }
 
 .is-translucent.theme-dark .markdown-preview-view {
@@ -1824,71 +2102,75 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide) .mod-sidedock .wor
 
 
 
-
 /* 
  * 适配PC端样式 
  */
+body:not(.is-mobile)	.suggestion-container,
+body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion,
+body:not(.is-mobile)	.suggestion-container.mod-search-suggestion,
+body:not(.is-mobile)	.modal.float-search-modal,
 body:not(.is-mobile)	.modal-container.mod-dim .prompt {
-	backdrop-filter: blur(15px);
-	background-color: var(--model-bg-color);
+	backdrop-filter: blur(12px);
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.6);
 }
 
-body:not(.is-mobile)	.modal-container.mod-dim .prompt .prompt-input-container {
-	background-color: transparent;
+body:not(.is-mobile).theme-dark	.suggestion-container,
+body:not(.is-mobile).theme-dark	.suggestion-container.mod-search-suggestion .suggestion,
+body:not(.is-mobile).theme-dark	.suggestion-container.mod-search-suggestion,
+body:not(.is-mobile).theme-dark	.modal.float-search-modal,
+body:not(.is-mobile).theme-dark	.modal-container.mod-dim .prompt {
+	backdrop-filter: blur(12px);
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
-body:not(.is-mobile)	input.prompt-input {
-	background-color: transparent !important;
-}
-
-body:not(.is-mobile)	.modal.float-search-modal {
-	background-color: var(--model-bg-color);
-	backdrop-filter: blur(15px);
-}
-
-body:not(.is-mobile)	.modal-container.mod-dim .prompt::before,
-body:not(.is-mobile)	.modal.float-search-modal::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: inherit;
-	backdrop-filter: blur(15px);
-	z-index: -1;
-}
-
-body:not(.is-mobile)	.float-search-modal .float-search-modal-search-ctn .search-row,
+.setting-item-control select,
 body:not(.is-mobile)	.global-search-input-container,
-body:not(.is-mobile)	.search-input-container input {
+body:not(.is-mobile)	.search-input-container input,
+button:not(.clickable-icon),
+body:not(.is-mobile) input.prompt-input,
+body:not(.is-mobile)	.suggestion-item.is-selected {
+	border: 1px solid rgb(0 0 0 / 10%);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: var(--radius-xl);
+}
+
+body.theme-dark .setting-item-control select,
+body:not(.is-mobile).theme-dark	.global-search-input-container,
+body:not(.is-mobile).theme-dark	.search-input-container input,
+body.theme-dark button:not(.clickable-icon),
+body:not(.is-mobile).theme-dark input.prompt-input,
+body:not(.is-mobile).theme-dark	.suggestion-item.is-selected {
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	background-color: rgb(255 255 255 / 5%);
+}
+
+body:not(.is-mobile) input.prompt-input {
+	border-radius: 25px;
+	padding: var(--size-4-1) var(--size-4-5);
+}
+
+body:not(.is-mobile)	.fs-leaf-view .workspace-split,
+body:not(.is-mobile)	input.prompt-input,
+body:not(.is-mobile)	.search-input-container input,
+body:not(.is-mobile)	.float-search-modal .float-search-modal-search-ctn .search-row,
+.modal,
+body:not(.is-mobile)	.modal-container.mod-dim .prompt .prompt-input-container {
 	background-color: transparent !important;
-	border-radius: 14px;
 }
 
-body:not(.is-mobile)	.suggestion-container.mod-search-suggestion::before {	
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: var(--app-model-bg-color) !important;
-	backdrop-filter: blur(5px);
-	z-index: -1;
+body:not(.is-mobile) .suggestion-item.is-selected {
+	border-radius: 20px;
 }
 
-body:not(.is-mobile)	.suggestion-container.mod-search-suggestion {
-	background-color: var(--suggestion-bg-color) !important;
-	backdrop-filter: blur(5px) !important;
+body:not(.is-mobile)	.prompt-input-container {
+	padding: 5px;
 }
-
-body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
-	background-color: var(--suggestion-bg-color) !important;
-	backdrop-filter: blur(5px) !important;
-}
-
-
 
 .suggestion-item {
 	padding-top: 10px;
@@ -1902,7 +2184,7 @@ body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
  * 调整 cMenu Toolbar Editor 样式 
  */
  #editingToolbarModalBar.editingToolbarFlex :is(.editingToolbarCommandItem, button[class^=editingToolbarCommandsubItem]) {
-	/* margin: 5px !important; */
+	margin: 5px !important;
 	background-color: transparent;
 }
 
@@ -2004,8 +2286,9 @@ body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
 
 
 /* Export image 样式 */
-.modal-container.mod-dim .modal:has(.export-image-preview-root) {
-	width: 60% !important;
+body:not(.is-mobile) .modal-container.mod-dim .modal:has(.export-image-preview-root) {
+	min-width: 50% !important;
+	max-width: 65% !important;
 }
 
 .modal-container.mod-dim .modal:has(.export-image-preview-root) .modal-title {
@@ -2013,7 +2296,9 @@ body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
 }
 
 .export-image-preview-left {
-	max-width: 400px;
+	max-width: 450px;
+	padding: 0 15px 0 0;
+	min-width: 320px;
 }
 
 .export-image-preview-right {
@@ -2022,8 +2307,6 @@ body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
 	border-radius: 10px;
 }
 
-
-/* 适配手机端，以13Pro Max分辨率为限制 */
 .is-mobile .modal-container.mod-dim .modal:has(.export-image-preview-root) {
 	width: 100% !important;
 	margin-top: 50px;
@@ -2042,15 +2325,13 @@ body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
 	margin: 0;
 }
 
-.export-image-preview-left {
-	padding: 0 15px 0 0;
-}
-
 .export-image-preview-left .setting-item {
 	display: flex !important;
-	flex-direction: row !important;
+	flex-direction: column !important;
 	justify-content: space-between;
-	align-items: center !important;
+	align-items: flex-start !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
 }
 
 .export-image-preview-left .setting-item .setting-item-info {
@@ -2064,15 +2345,26 @@ body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
 }
 
 .export-image-preview-left .setting-item .setting-item-control input[type="number"] {
-	width: 60px !important;
 	text-align: center;
+	border: solid 0.1px var(--background-modifier-border);
 }
 
 .export-image-preview-actions {
 	padding-bottom: 20px !important;
+	margin-top: 15px;
 }
 
+.export-image-preview-left .setting-item .setting-item-name {
+	padding-bottom: 10px;
+}
 
+.export-image-preview-left .setting-item .setting-item-description {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	padding-top: var(--size-4-1);
+	line-height: var(--line-height-tight);
+	padding-bottom: var(--size-4-3);
+}
 
 
 /* Float Search 样式 */
@@ -2118,6 +2410,13 @@ body:not(.is-mobile)	.suggestion-container.mod-search-suggestion .suggestion {
 	margin-left: 0px;
 }
 
+.modal.mod-settings.mod-sidebar-layout .modal-close-button {
+	display: none;
+}
+
+.modal-sidebar {
+	background-color: var(--background-primary);
+}
 
 
 /* markmap */
@@ -2164,22 +2463,52 @@ g.markmap-node[data-depth='0'] .markmap-foreign {
 /* 调整关系图谱样式 */
 .workspace-split:not(.mod-root) .graph-controls.is-close, .graph-controls.is-close {
 	background-color: transparent;
-	margin-top: -20px;
+	margin-top: -10px;
 	margin-right: -10px;
 }
 
 /* Windows | linux style */
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .app-container::before {
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)::before {
 	content: '';
+	z-index: -1;
+	filter: blur(var(--win-blur)) brightness(var(--win-window-brightness)) opacity(var(--win-window-opacity));
+	background: var(--win-bg-image-url) repeat;
+	background-size: cover;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	background: var(--win-bg-image-url) repeat;
-	background-size: cover;
-	filter: blur(var(--win-blur)) brightness(var(--win-window-brightness)) opacity(var(--win-window-opacity));
-	z-index: -1;
+	bottom: 0; 
+}
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .app-container .horizontal-main-container,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .app-container {
+	backdrop-filter: blur(50px) saturate(180%);
+	/* -webkit-backdrop-filter: blur(15px) saturate(180%); */
+	/* backdrop-filter: blur(15px) saturate(180%) brightness(var(--win-window-brightness)) opacity(var(--win-window-opacity)); */
+
+	/* backdrop-filter: blur(var(--win-blur)) brightness(var(--win-window-brightness)) opacity(var(--win-window-opacity)); */
+}
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-vertical.mod-root,
+/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-ribbon.mod-left:before,  */
+/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-ribbon.mod-left,  */
+/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tabs .workspace-leaf,  */
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-leaf .view-content, 
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-split.mod-right-split .workspace-tabs, 
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tab-container
+/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tab-header-container,  */
+/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-sidedock-vault-profile,  */
+/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-split */
+{
+	background-color: transparent !important;
+}
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile)  .workspace-tab-container {
+	background: rgba(255, 255, 255, 0.1) !important;
+	/* backdrop-filter: blur(15px) saturate(180%); */
+	/* -webkit-backdrop-filter: blur(15px) saturate(180%); */
 }
 
 .workspace-ribbon.mod-left:before {
@@ -2187,11 +2516,11 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .app-container::b
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-vertical.mod-root {
-	background: var(--win-editor-bg-color) !important;
+	/* background: var(--win-editor-bg-color) !important; */
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon.mod-left:before {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace,
@@ -2199,7 +2528,7 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-leaf,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .sidebar-toggle-button.mod-left,
-body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-left-split .profileworkspace-sidedock-vault-,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .mod-root .mod-top .workspace-tab-header-container,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .titlebar-button-container.mod-right,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-tab-header-container {
@@ -2215,6 +2544,11 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .view-header-title-container:after {
 	background: transparent !important;
 }
+
+body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-sidedock-vault-profile {
+	background-color: transparent !important;
+}
+
 
 
 /* web viewer */
@@ -2239,13 +2573,16 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .view-header-titl
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: var(--background-setting-item);
-	border: solid 0.5px var(--background-modifier-border);
+	border: 0.1px solid var(--background-modifier-border);
+	backdrop-filter: blur(15px);
 }
 
 /* 第一个 .setting-item */
 .setting-item-heading + .setting-item {
 	border-top-left-radius: var(--radius-l);
 	border-top-right-radius: var(--radius-l);
+	/* box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); */
+	/* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 /* heading前的一个item */
@@ -2253,6 +2590,9 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .view-header-titl
 .setting-item:has(+ .setting-filter-container) {
 	border-bottom-left-radius: var(--radius-l);
 	border-bottom-right-radius: var(--radius-l);
+	/* box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1); */
+	/* border: 1px solid rgba(255, 255, 255, 0.1); */
+
 }
 
 /* 判断第一个 item */
@@ -2260,6 +2600,8 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .view-header-titl
 	border-top-left-radius: var(--radius-l);
 	border-top-right-radius: var(--radius-l);
 	padding-top: 10px;
+	/* border: 1px solid rgba(255, 255, 255, 0.1); */
+
 }
 
 .setting-item:last-of-type {
@@ -2290,7 +2632,9 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .view-header-titl
 	margin-left: 15px;
 	margin-right: 15px;
 	overflow: hidden;
-	border: solid 0.5px var(--background-modifier-border);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(15px);
 }
 
 body:not(.is-mobile) .vertical-tab-header-group-items {
@@ -2388,4 +2732,153 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 
 body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon {
 	gap: 10px;
+}
+
+
+/* comander 优化 */
+.cmdr-name-input-wrapper button {
+	margin-right: 60px;
+}
+
+
+
+/* # quite outliner优化 */
+
+
+body .quiet-outline .n-button {
+	--n-border: unset !important ;
+	--n-border-hover: 1px solid var(--text-accent) !important;;
+	--n-border-pressed: 1px solid var(--text-accent) !important;;
+	--n-border-focus: 1px solid var(--text-accent) !important;;
+}
+
+body .quiet-outline .n-tree-node-wrapper {
+	--n-node-border-radius: var(--radius-xl);
+}
+
+.quiet-outline .n-tree-node-content__text p {
+	line-height: unset;
+}
+
+.quiet-outline .function-bar .n-input {
+	border-radius: 14px;
+}
+
+.is-mobile .quiet-outline .function-bar .n-input {
+	max-width: 70%;
+}
+
+.n-slider .n-slider-rail {
+	height: 2px;
+}
+
+.n-tree .n-tree-node-wrapper:not(:has(.n-tree-node-switcher--expanded)):has(.n-tree-node-switcher--hide) .n-tree-node .n-tree-node-content::before {
+	content: "•";
+	font-weight: bolder;
+	padding-right: 5px;
+	color: var(--nav-collapse-icon-color);
+}
+
+.n-tree .n-tree-node-wrapper .n-tree-node .n-tree-node-content::before {
+	margin-left: -18.5px;
+}
+
+.n-tree .n-tree-node-wrapper:not(:has(.n-tree-node-switcher--expanded)):not(:has(.n-tree-node-switcher--hide)) .n-tree-node .n-tree-node-content,
+.n-tree .n-tree-node-wrapper:has(.n-tree-node-switcher--expanded) .n-tree-node .n-tree-node-content {
+  transform: translateX(-7px);	
+}
+
+.n-tree .n-tree-node-switcher .n-tree-node-switcher__icon {
+  transition: transform 0.2s ease;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+	margin-left: -2px;
+	color: var(--nav-collapse-icon-color);
+}
+
+.n-tree .n-tree-node-wrapper:not(:has(.n-tree-node-switcher--expanded)):not(:has(.n-tree-node-switcher--hide)) .n-tree-node-switcher__icon {
+	margin-top: -2px;
+}
+
+.n-tree .n-tree-node-switcher .n-tree-node-switcher__icon .xicon {
+  display: none;
+}
+
+/* bases */
+.bases-table-header {
+	padding-left: 5px;
+}
+
+.bases-tbody .bases-td .bases-table-cell {
+	padding: 15px;
+}
+
+body:not(.is-translucent) .workspace-ribbon.mod-left:before,
+body:not(.is-translucent) .workspace-ribbon.mod-left,
+body:not(.is-translucent) .workspace-tabs .workspace-leaf,
+body:not(.is-translucent) .workspace-leaf .view-content,
+body:not(.is-translucent) .workspace-split.mod-right-split .workspace-tabs,
+body:not(.is-translucent) .workspace-tab-container,
+body:not(.is-translucent) .workspace-tab-header-container,
+body:not(.is-translucent) .workspace-sidedock-vault-profile,
+body:not(.is-translucent) .workspace-split {
+	background-color: var(--background-primary) !important;
+}
+
+body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
+	--tab-max-width: 240px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.workspace .mod-root .workspace-tab-header-inner::after {
+	display: none;
+}
+
+/* 设置页玻璃效果 */
+
+.modal.mod-settings .vertical-tab-header,
+.modal-content,
+.modal-content .vertical-tab-header,
+.modal-content .vertical-tab-content-container,
+.modal-content .vertical-tab-content-container .vertical-tab-content {
+	background-color: transparent;
+}
+
+.community-item,
+.modal.mod-sidebar-layout .modal-content,
+.modal-sidebar {
+	/* background-color: var(--model-bg-color);
+	backdrop-filter: blur(37px) saturate(0.5); */
+}
+
+.community-modal-details {
+	background-color: var(--background-setting);
+}
+
+.mod-right-split .workspace-tab-header:hover,
+.mod-left-split .workspace-tab-header.has-active-menu, 
+.mod-right-split .workspace-tab-header.has-active-menu, 
+.mod-left-split .workspace-tab-header.is-active, 
+.mod-right-split .workspace-tab-header.is-active {
+	border: none;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 25px;
+}
+
+/* .tooltip.mod-right {
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.n-tree-node.located p {
+	--61117f8c-locatedColor: var(--text-accent);
 }

@@ -39,7 +39,10 @@
   "Research/LLM resources.md": "🕯",
   "Others/China WEB.md": "🫤",
   "Others/Links For Check - weboasis.md": "RiLinksFill",
-  "Prompt Engineering.md": "FabConnectdevelop",
+  "Prompt Engineering.md": {
+    "iconName": "FabConnectdevelop",
+    "iconColor": "#ff0000"
+  },
   "Work -job/Template Readme.md.md": "⚜",
   "CashBook": "🖥"
 }

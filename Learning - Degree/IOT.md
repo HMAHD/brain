@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/msj2lbx5#t2xgHNAkc1OOvQYMkY/GC1ghDMbZrOhNbzHjZSCk5RE
+share_updated: 2025-07-13T00:28:16+05:30
+---
 
 ## Quiz Concepts - Detailed Explanations
 
